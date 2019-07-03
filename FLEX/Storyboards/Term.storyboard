@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Term View Controller-->
+        <scene sceneID="4Ig-U5-nd7">
+            <objects>
+                <viewController storyboardIdentifier="TermViewController" id="Tju-gC-WeW" customClass="TermViewController" customModule="FLEX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4zn-NU-VbG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPv-MY-Oig">
+                                <rect key="frame" x="60" y="792" width="294" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LcZ-pC-r4F"/>
+                                </constraints>
+                                <state key="normal" title="I Accept" backgroundImage="buttonbg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptButton_TouchUpInside:" destination="Tju-gC-WeW" eventType="touchUpInside" id="TEV-GZ-V5w"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm9-fh-CGc">
+                                <rect key="frame" x="20" y="108" width="374" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Your Information. We collect information you provide to us in connection with our Services, such as when you create or update your account, log into your account, request or reserve transportation, contact our customer service, or otherwise communicate with us via telephone, our websites, mobile applications or otherwise. This information includes your name, telephone number, email address, mailing address, photographs or other text or images you use, e.g., for your profile, the types of Services you request (collectively, “Personal Information”), as well as transaction details, billing and payment information, and other information you use or provide to us in using the Services. If you do not wish to provide any Personal Information, you may simply decline to use our Services.
+
+In addition to the information you provide to us, we also collect information about you when you visit our websites, use our mobile apps or otherwise use our Services, such as how you use and interact with our Services, your selected preferences and settings, the geographic location of you, of your travel, and of your device, your Internet Protocol (“IP”) address and the URL from which you access our websites and mobile apps, the pages you visit on our websites, and the time and duration of your visits to, or use of our websites and mobile apps.
+
+We may collect information about your devices, including hardware, operating systems, software, and mobile network information. Because our Services including communications between you and drivers or providers of transportation, we may collect the date and time of calls or messages, the content of messages, phone numbers, and other such call data.
+
+Your Location. In order for us to be able to provide your requested Services, you will need to grant us permission to obtain your geographic location from your device. Thereafter, you can disable this function in the settings of your device, understanding that you may not be able to avail yourself of our Services that require your location.
+
+Your Contacts. If you permit us to access your address book on your device, we may access that data for purposes of providing our Services to you or your contacts and other reasons we describe at the time you grant us permission or at the time we access such data.
+
+Information from Third Parties or Other Sources. We may also get information about you from third parties, for example, if you log into your account with us via social media or any another service provider, such as Facebook or a Gmail email account. If you have a corporate or business enterprise account with us, we may also obtain information about your employees or about you from your employer, as the case may be. Drivers or providers of transportation or other Services may provide us with information about you arising out of your use of the Services. You should be aware that Taxi Taxi of Raleigh cannot control the information it obtains from third parties.
+
+Cookies. On our websites, mobile applications and other online Services, we use automatic data collection technologies such as beacons, pixel tags, software development kits and “cookies” in order to remember user online preferences and settings, enhance your experience when using our Services, analyze online website traffic and trends, be informed about a user’s device and network information, and generally understand the behaviors and interests of users of our Services. Cookies are small text files stored on your browser or device by websites, mobile apps and other online media that can recognize or authenticate repeat users, facilitate the user’s ongoing access to and use of the website and allow a website to track usage behavior and compile aggregate data that will allow content improvements and targeted advertising relevant for each user. Generally, cookies work by assigning a unique number to the user that has no meaning outside the assigning site.
+
+To Provide and Improve the Services. Taxi Taxi of Raleigh uses the information we collect to respond to your requests, send you updates, and otherwise communicate with you; facilitate and otherwise process transactions; improve our Services; respond to your inquiries; prevent illegal activities; comply with court orders, government requests and other applicable legal requirements; enforce our Terms of Use and otherwise provide you the Services, including with respect to gift cards you have purchased. We may share your information with our vendors, consultants, and other service providers as necessary to provide you Services on behalf of Taxi Taxi of Raleigh. For example, in fulfillment of your transportation requests, we may share with drivers your name, description or photograph that you provide to us for identification purposes, your geographic locations for pick up and your requested destinations.
+
+For Internal Purposes. We may use the information we collect for our internal business purposes, for example, to manage the content of our websites or to assess the amount of online traffic to our websites. Taxi Taxi of Raleigh may provide third parties with aggregate statistics about our visitors, traffic patterns and related website usage information. This data reflects website usage patterns gathered during hundreds or thousands of user visits to our websites. Taxi Taxi of Raleigh reserves the right to perform, or have performed by third parties, statistical and other analyses of user behavior and characteristics in order to measure interest in and use of the various pages, or functional, graphical or informational frames or areas of the websites, and to inform advertisers of such analyses as well as the number of users that have been exposed to or clicked on their advertising banners. Taxi Taxi of Raleigh will only provide aggregated anonymous data from log files and other databases of user information to third parties to improve our content offerings, graphics, layout, ease of website use or navigation, and otherwise to provide and to improve our Services.
+
+To Communicate. You will receive emails, text messages, phone calls and other communications from us to provide you with our Services, provide updates, or to respond to inquiries made through the “Contact Us” page on our websites and mobile apps. We will also facilitate communications between you and a driver or provider of the Services, such as clarification of geographical location, pick up time, and so forth. With respect to users who maintain a corporate business account with us, we may use the contact information of such users to send emails, text messages, phone calls and other communications about the status of such corporate business account. We may send you communications in which we believe you would be interested, including information about our services, promotions, products and events. You will be able to opt out of receiving such promotional email communications by clicking on links to unsubscribe within those emails.
+
+Feedback and Testimonials. Any testimonials or feedback that you provide to us will be utilized to improve our Services. In addition, we may use testimonials in our marketing materials, but we will not include any of your personally identifiable information in such marketing materials unless we have your written consent to do so.
+
+Platform Permissions. Mobile platforms such as iOS and Android define device data that mobile apps cannot access without your consent. The first time our mobile app wants to access your data, the iOS mobile platform will alert you, and you will be able to consent (or not consent) to that request to access data. An Android device will notify you that our mobile app wants to access your data before you first use the app, then your subsequent use of the app constitutes your consent.  Credit Card Transactions: Taxi Taxi of Raleigh does not collect or store any credit card or other financial information when you purchase any of our Services through our websites or mobile apps. In any event, your credit card number or bank account number is not collected or stored by Taxi Taxi of Raleigh.
+
+We will not share your personally identifiable information with third parties except (a) as a result of a sale, acquisition, transfer of assets transaction or other fundamental corporate change involving Taxi Taxi of Raleigh or one of its affiliates; (b) when in our sole judgment we have reason to believe that disclosing this information is reasonably necessary to prevent fraud or other violation of applicable law(s); or (c) in response to subpoenas, court orders, search warrants and other government requests or as otherwise required by applicable law(s).
+
+Advertisers and Third Party Vendors. You should also be aware that Taxi Taxi of Raleigh may post links to third party sites on its websites and mobile apps and sometimes permit third parties to advertise their services on its websites and mobile apps. You may choose to purchase a product or service offered by a third party by clicking on a link to such third party’s website(s), etc. Please note that by clicking on an advertisement or a link to a third party website, you are leaving our websites or mobile apps and being redirected to the third party’s website(s), and any access, collection, use, storage, handling, or disclosure of information you provide thereafter will be governed by the terms and conditions and the privacy policies of those other third-party websites, which may differ from this Privacy Statement. Taxi Taxi of Raleigh is not responsible for the handling of your information, or any actions, policies or breaches of privacy or security by such third parties.
+
+</string>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZe-B5-V17">
+                                <rect key="frame" x="111.5" y="64" width="191" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="vBZ-2T-vz6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ2-dK-tfQ">
+                                <rect key="frame" x="64" y="752" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="FoW-x9-mNt"/>
+                                    <constraint firstAttribute="height" constant="20" id="lpg-xS-EAS"/>
+                                </constraints>
+                                <state key="normal" image="uncheck"/>
+                                <connections>
+                                    <action selector="checkButton_TouchUpInside:" destination="Tju-gC-WeW" eventType="touchUpInside" id="HOd-YL-kpe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the Terms and conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXc-kP-LLB">
+                                <rect key="frame" x="100" y="754" width="214" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="nTh-i6-XI0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oZe-B5-V17" firstAttribute="centerX" secondItem="Fyu-ap-U5R" secondAttribute="centerX" id="7Un-Qz-TB9"/>
+                            <constraint firstItem="JXc-kP-LLB" firstAttribute="leading" secondItem="rZ2-dK-tfQ" secondAttribute="trailing" constant="16" id="8dg-OX-PE7"/>
+                            <constraint firstItem="Fyu-ap-U5R" firstAttribute="bottom" secondItem="bPv-MY-Oig" secondAttribute="bottom" constant="20" id="BXe-bK-Qsb"/>
+                            <constraint firstItem="bPv-MY-Oig" firstAttribute="top" secondItem="rZ2-dK-tfQ" secondAttribute="bottom" constant="20" id="Bf0-ls-3DK"/>
+                            <constraint firstItem="JXc-kP-LLB" firstAttribute="centerX" secondItem="4zn-NU-VbG" secondAttribute="centerX" id="OWZ-mU-KYx"/>
+                            <constraint firstItem="rZ2-dK-tfQ" firstAttribute="top" secondItem="Wm9-fh-CGc" secondAttribute="bottom" constant="20" id="ZwV-5k-Thq"/>
+                            <constraint firstItem="Wm9-fh-CGc" firstAttribute="top" secondItem="oZe-B5-V17" secondAttribute="bottom" constant="20" id="aDt-7F-yZ3"/>
+                            <constraint firstItem="bPv-MY-Oig" firstAttribute="leading" secondItem="Fyu-ap-U5R" secondAttribute="leading" constant="60" id="bMF-Qf-Cp2"/>
+                            <constraint firstItem="Fyu-ap-U5R" firstAttribute="trailing" secondItem="bPv-MY-Oig" secondAttribute="trailing" constant="60" id="dGE-gy-cgZ"/>
+                            <constraint firstItem="JXc-kP-LLB" firstAttribute="centerY" secondItem="rZ2-dK-tfQ" secondAttribute="centerY" id="eTZ-hs-JGU"/>
+                            <constraint firstItem="Fyu-ap-U5R" firstAttribute="trailing" secondItem="Wm9-fh-CGc" secondAttribute="trailing" constant="20" id="seG-zF-N36"/>
+                            <constraint firstItem="oZe-B5-V17" firstAttribute="top" secondItem="Fyu-ap-U5R" secondAttribute="top" constant="20" id="x41-or-CQk"/>
+                            <constraint firstItem="Wm9-fh-CGc" firstAttribute="leading" secondItem="Fyu-ap-U5R" secondAttribute="leading" constant="20" id="xyj-sz-csq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fyu-ap-U5R"/>
+                    </view>
+                    <connections>
+                        <outlet property="acceptBtn" destination="bPv-MY-Oig" id="kGy-gA-sSo"/>
+                        <outlet property="checkBtn" destination="rZ2-dK-tfQ" id="UvD-hc-pfS"/>
+                        <segue destination="fPS-YR-CIQ" kind="show" identifier="goSignupApplicationFromTermSegue" id="VaS-u9-zlB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Isz-tS-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.34782608695653" y="100.44642857142857"/>
+        </scene>
+        <!--SignupApplicationViewController-->
+        <scene sceneID="keJ-vz-msu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="SignupApplicationViewController" id="fPS-YR-CIQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THJ-gV-Shq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonbg" width="518" height="109"/>
+        <image name="uncheck" width="40" height="40"/>
+    </resources>
+</document>

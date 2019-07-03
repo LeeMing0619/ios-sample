@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5NT-Lj-TXo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iok-nW-WUg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5NT-Lj-TXo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q9F-OP-j9l">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w9y-2V-ooZ" kind="relationship" relationship="rootViewController" id="cUX-k5-eR3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lI-Ye-npy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="773.4375"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="bdq-se-pWE">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="w9y-2V-ooZ" customClass="OnboardingViewController" customModule="FLEX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fdr-z9-EA8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5D-Gf-ZCL">
+                                <rect key="frame" x="88.5" y="751" width="237" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="KLE-hx-KqU"/>
+                                    <constraint firstAttribute="width" constant="237" id="wMg-xs-A2g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" red="0.0" green="0.80000000000000004" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButton_TouchUpInside:" destination="w9y-2V-ooZ" eventType="touchUpInside" id="LIg-7v-3D8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b5D-Gf-ZCL" firstAttribute="centerX" secondItem="sLV-5g-0cp" secondAttribute="centerX" id="Xjc-Ce-l6n"/>
+                            <constraint firstItem="sLV-5g-0cp" firstAttribute="bottom" secondItem="b5D-Gf-ZCL" secondAttribute="bottom" constant="60" id="spB-xL-b10"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sLV-5g-0cp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fac-Tg-hFZ"/>
+                    <connections>
+                        <outlet property="skipBtn" destination="b5D-Gf-ZCL" id="SbV-fB-Hhn"/>
+                        <segue destination="s7c-P7-XCq" kind="show" identifier="goLoginSegue" id="8LT-XB-YeO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQO-S7-6N5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="772.76785714285711"/>
+        </scene>
+        <!--navLogin-->
+        <scene sceneID="Cbf-oO-pFN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="navLogin" id="s7c-P7-XCq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsF-1O-dro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="773"/>
+        </scene>
+    </scenes>
+</document>
