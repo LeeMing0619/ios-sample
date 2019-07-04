@@ -1,0 +1,6 @@
+framework module Pods_FLEX {
+  umbrella header "Pods-FLEX-umbrella.h"
+
+  export *
+  module * { export * }
+}
